@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://getbootstrap.com/docs/4.0/examples/checkout/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+    <title>Dynamically Created Math Worksheets</title>
+    <link rel="canonical" href="">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+    <div class="container">
+      <div class="py-5 text-center">
+        <h2>Division Worksheets</h2>
+        <p class="lead">You can select any combination of numbers for each different addend.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 order-md-1  mx-auto">
+          
+          <form class="act_addition">
+			<input type="hidden" name="action" value="div">
+            <div class="mb-3">
+              <label for="email">Title <span class="text-muted"></span></label>
+              <input type="text" class="form-control" name="title" id="title" placeholder="Enter title" required="required">
+              <div class="invalid-feedback">
+                Please  Enter title
+              </div>
+            </div>
+             <div class="mb-3">
+              <label for="email">Footer text <span class="text-muted"></span></label>
+              <input type="text" class="form-control" name="fcredit" id="fcredit" placeholder="Enter Footer text" required="required">
+            </div>
+			
+			<hr class="mb-4">
+			<p class="mb-3">Divide by these numbers</p>
+			<div class="row">
+			 <!--<div class="col-md-3 mb-3">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" name="firstnumbers[]" value="0" class="custom-control-input" id="A1_0" required="required">
+              <label class="custom-control-label" for="A1_0">0</label>
+            </div> 
+			</div>-->
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="1" class="custom-control-input" id="A1_1" required="required">
+					<label class="custom-control-label" for="A1_1">1</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="2" class="custom-control-input" id="A1_2" required="required">
+					<label class="custom-control-label" for="A1_2">2</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="3" class="custom-control-input" id="A1_3" required="required">
+					<label class="custom-control-label" for="A1_3">3</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="4" class="custom-control-input" id="A1_4" required="required">
+					<label class="custom-control-label" for="A1_4">4</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="5" class="custom-control-input" id="A1_5" required="required">
+					<label class="custom-control-label" for="A1_5">5</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="6" class="custom-control-input" id="A1_6" required="required">
+					<label class="custom-control-label" for="A1_6">6</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="7" class="custom-control-input" id="A1_7" required="required">
+					<label class="custom-control-label" for="A1_7">7</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="8" class="custom-control-input" id="A1_8" required="required">
+					<label class="custom-control-label" for="A1_8">8</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="9" class="custom-control-input" id="A1_9" required="required">
+					<label class="custom-control-label" for="A1_9">9</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="10" class="custom-control-input" id="A1_10" required="required">
+					<label class="custom-control-label" for="A1_10">10</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="11" class="custom-control-input" id="A1_11" required="required">
+					<label class="custom-control-label" for="A1_11">11</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="12" class="custom-control-input" id="A1_12" required="required">
+					<label class="custom-control-label" for="A1_12">12</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="13" class="custom-control-input" id="A1_13" required="required">
+					<label class="custom-control-label" for="A1_13">13</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="14" class="custom-control-input" id="A1_14" required="required">
+					<label class="custom-control-label" for="A1_14">14</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="15" class="custom-control-input" id="A1_15" required="required">
+					<label class="custom-control-label" for="A1_15">15</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="16" class="custom-control-input" id="A1_16" required="required">
+					<label class="custom-control-label" for="A1_16">16</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="17" class="custom-control-input" id="A1_17" required="required">
+					<label class="custom-control-label" for="A1_17">17</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="18" class="custom-control-input" id="A1_18" required="required">
+					<label class="custom-control-label" for="A1_18">18</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="19" class="custom-control-input" id="A1_19" required="required">
+					<label class="custom-control-label" for="A1_19">19</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="20" class="custom-control-input" id="A1_20" required="required">
+					<label class="custom-control-label" for="A1_20">20</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="21" class="custom-control-input" id="A1_21" required="required">
+					<label class="custom-control-label" for="A1_21">21</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="22" class="custom-control-input" id="A1_22" required="required">
+					<label class="custom-control-label" for="A1_22">22</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="23" class="custom-control-input" id="A1_23" required="required">
+					<label class="custom-control-label" for="A1_23">23</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="24" class="custom-control-input" id="A1_24" required="required">
+					<label class="custom-control-label" for="A1_24">24</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="25" class="custom-control-input" id="A1_25" required="required">
+					<label class="custom-control-label" for="A1_25">25</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="26" class="custom-control-input" id="A1_26" required="required">
+					<label class="custom-control-label" for="A1_26">26</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="27" class="custom-control-input" id="A1_27" required="required">
+					<label class="custom-control-label" for="A1_27">27</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="28" class="custom-control-input" id="A1_28" required="required">
+					<label class="custom-control-label" for="A1_28">28</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="29" class="custom-control-input" id="A1_29" required="required">
+					<label class="custom-control-label" for="A1_29">29</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="30" class="custom-control-input" id="A1_30" required="required">
+					<label class="custom-control-label" for="A1_30">30</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="31" class="custom-control-input" id="A1_31" required="required">
+					<label class="custom-control-label" for="A1_31">31</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="32" class="custom-control-input" id="A1_32" required="required">
+					<label class="custom-control-label" for="A1_32">32</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="33" class="custom-control-input" id="A1_33" required="required">
+					<label class="custom-control-label" for="A1_33">33</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="34" class="custom-control-input" id="A1_34" required="required">
+					<label class="custom-control-label" for="A1_34">34</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="35" class="custom-control-input" id="A1_35" required="required">
+					<label class="custom-control-label" for="A1_35">35</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="36" class="custom-control-input" id="A1_36" required="required">
+					<label class="custom-control-label" for="A1_36">36</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="37" class="custom-control-input" id="A1_37" required="required">
+					<label class="custom-control-label" for="A1_37">37</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="38" class="custom-control-input" id="A1_38" required="required">
+					<label class="custom-control-label" for="A1_38">38</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="39" class="custom-control-input" id="A1_39" required="required">
+					<label class="custom-control-label" for="A1_39">39</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="firstnumbers[]" value="40" class="custom-control-input" id="A1_40" required="required">
+					<label class="custom-control-label" for="A1_40">40</label>
+				</div>
+			</div>
+			</div>
+			
+            <hr class="mb-4">
+			<p class="mb-3">To get these quotients   (The Answers)...</p>
+			<div class="row">
+			<!-- <div class="col-md-3 mb-3">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" name="secondnumbers[]" value="0" class="custom-control-input" id="A2_0" required="required">
+              <label class="custom-control-label" for="A2_0">0</label>
+            </div>
+			</div> -->
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="1" class="custom-control-input" id="A2_1" required="required">
+					<label class="custom-control-label" for="A2_1">1</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="2" class="custom-control-input" id="A2_2" required="required">
+					<label class="custom-control-label" for="A2_2">2</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="3" class="custom-control-input" id="A2_3" required="required">
+					<label class="custom-control-label" for="A2_3">3</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="4" class="custom-control-input" id="A2_4" required="required">
+					<label class="custom-control-label" for="A2_4">4</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="5" class="custom-control-input" id="A2_5" required="required">
+					<label class="custom-control-label" for="A2_5">5</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="6" class="custom-control-input" id="A2_6" required="required">
+					<label class="custom-control-label" for="A2_6">6</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="7" class="custom-control-input" id="A2_7" required="required">
+					<label class="custom-control-label" for="A2_7">7</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="8" class="custom-control-input" id="A2_8" required="required">
+					<label class="custom-control-label" for="A2_8">8</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="9" class="custom-control-input" id="A2_9" required="required">
+					<label class="custom-control-label" for="A2_9">9</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="10" class="custom-control-input" id="A2_10" required="required">
+					<label class="custom-control-label" for="A2_10">10</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="11" class="custom-control-input" id="A2_11" required="required">
+					<label class="custom-control-label" for="A2_11">11</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="12" class="custom-control-input" id="A2_12" required="required">
+					<label class="custom-control-label" for="A2_12">12</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="13" class="custom-control-input" id="A2_13" required="required">
+					<label class="custom-control-label" for="A2_13">13</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="14" class="custom-control-input" id="A2_14" required="required">
+					<label class="custom-control-label" for="A2_14">14</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="15" class="custom-control-input" id="A2_15" required="required">
+					<label class="custom-control-label" for="A2_15">15</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="16" class="custom-control-input" id="A2_16" required="required">
+					<label class="custom-control-label" for="A2_16">16</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="17" class="custom-control-input" id="A2_17" required="required">
+					<label class="custom-control-label" for="A2_17">17</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="18" class="custom-control-input" id="A2_18" required="required">
+					<label class="custom-control-label" for="A2_18">18</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="19" class="custom-control-input" id="A2_19" required="required">
+					<label class="custom-control-label" for="A2_19">19</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="20" class="custom-control-input" id="A2_20" required="required">
+					<label class="custom-control-label" for="A2_20">20</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="21" class="custom-control-input" id="A2_21" required="required">
+					<label class="custom-control-label" for="A2_21">21</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="22" class="custom-control-input" id="A2_22" required="required">
+					<label class="custom-control-label" for="A2_22">22</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="23" class="custom-control-input" id="A2_23" required="required">
+					<label class="custom-control-label" for="A2_23">23</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="24" class="custom-control-input" id="A2_24" required="required">
+					<label class="custom-control-label" for="A2_24">24</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="25" class="custom-control-input" id="A2_25" required="required">
+					<label class="custom-control-label" for="A2_25">25</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="26" class="custom-control-input" id="A2_26" required="required">
+					<label class="custom-control-label" for="A2_26">26</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="27" class="custom-control-input" id="A2_27" required="required">
+					<label class="custom-control-label" for="A2_27">27</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="28" class="custom-control-input" id="A2_28" required="required">
+					<label class="custom-control-label" for="A2_28">28</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="29" class="custom-control-input" id="A2_29" required="required">
+					<label class="custom-control-label" for="A2_29">29</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="30" class="custom-control-input" id="A2_30" required="required">
+					<label class="custom-control-label" for="A2_30">30</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="31" class="custom-control-input" id="A2_31" required="required">
+					<label class="custom-control-label" for="A2_31">31</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="32" class="custom-control-input" id="A2_32" required="required">
+					<label class="custom-control-label" for="A2_32">32</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="33" class="custom-control-input" id="A2_33" required="required">
+					<label class="custom-control-label" for="A2_33">33</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="34" class="custom-control-input" id="A2_34" required="required">
+					<label class="custom-control-label" for="A2_34">34</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="35" class="custom-control-input" id="A2_35" required="required">
+					<label class="custom-control-label" for="A2_35">35</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="36" class="custom-control-input" id="A2_36" required="required">
+					<label class="custom-control-label" for="A2_36">36</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="37" class="custom-control-input" id="A2_37" required="required">
+					<label class="custom-control-label" for="A2_37">37</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="38" class="custom-control-input" id="A2_38" required="required">
+					<label class="custom-control-label" for="A2_38">38</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="39" class="custom-control-input" id="A2_39" required="required">
+					<label class="custom-control-label" for="A2_39">39</label>
+				</div>
+			</div>
+			<div class="col-md-3 mb-3">
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" name="secondnumbers[]" value="40" class="custom-control-input" id="A2_40" required="required">
+					<label class="custom-control-label" for="A2_40">40</label>
+				</div>
+			</div>
+			</div>
+            <hr class="mb-4">
+
+            <p class="mb-3">Number of Problems for Each Addition Worksheet</p>
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="Problems_16" name="probs" value="16" type="radio" class="custom-control-input" checked required="required">
+                <label class="custom-control-label" for="Problems_16">16 Problems</label>
+              </div>
+            </div>
+			
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Generate PDF</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2017-2018 Company Name</p>
+        
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+    <!--<script src="assets/js/popper.min.js"></script> -->
+     <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  
+
+</body></html>
